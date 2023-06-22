@@ -8,23 +8,12 @@ const $ = cheerio.load(html);
 
 console.log("ALL CONTENT:");
 // console.log($.html());
-const Fullname = $(".position-relative > span").text().trim()
+const Fullname = $(".position-relative > span").text().trim();
 
-const firstname = Fullname.split(' ')[0];
+const firstname = Fullname.split(" ")[0];
 
-const surname = Fullname.split(' ')[1];
+const surname = Fullname.split(" ")[1];
 
-// const firstjobdiv = $('div.font-md.d-flex.align-items-center').eq(0);
-// const firstjob = firstjobdiv.find('strong').text().trim();
-
-// const secondjobdiv = $('div.font-md.d-flex.align-items-center').eq(1);
-// const secondjob = secondjobdiv.find('strong').text().trim();
-
-// const thirdjobdiv = $('div.font-md.d-flex.align-items-center').eq(2);
-// const thirdjob = thirdjobdiv.find('strong').text().trim();
-
-// const fourthjobdiv = $('div.font-md.d-flex.align-items-center').eq(3);
-// const fourthjob = fourthjobdiv.find('strong').text().trim();
 // const ex_experience ={
 //   job: "firstjob",
 //   description: description1,
@@ -39,42 +28,100 @@ const surname = Fullname.split(' ')[1];
 //   beginDate: beginDate1,
 //   endDate: null,
 // }
-console.log("-------------------------------------")
-let experiences = []
-$('div.font-md.d-flex.align-items-center > strong').each((index,element)=>{
-  const ex_experience = {
-    job: "",
-    company: ""
-
-  }
-  ex_experience.job = $(element).text();
-  experiences.push(ex_experience)
-})
-experiences.forEach((experience)=>{
-  console.log(experience)
-})
-console.log("-------------------------------------")
-let companies = []
-
-$('div.col-xl-9 > div > div > div:first-child > span').each((index, element) => {
-  if(index %2 === 0){
-    companies.push($(element).text())
-  }
-  // experiences[index].job = $(element).text();
-  
+console.log("-------------------------------------");
+let experiences = [];
+$(
+    "div#DivExperiencesContainer div.font-md.d-flex.align-items-center > strong"
+).each((index, element) => {
+    const ex_experience = {
+        job: "",
+        company: "",
+        location: "",
+        beginDate: "",
+        endDate: "",
+        salary: 0,
+        salaryTime: "",
+        description: "",
+    };
+    ex_experience.job = $(element).text();
+    experiences.push(ex_experience);
 });
 
-console.log("-------------------------------------")
-experiences.forEach((experience,index)=>{
-  experience.company = companies[index]
-  console.log(experience)
-})
+console.log("-------------------------------------");
+console.log("Experiences:");
+let companies = [];
+let locations = [];
+let datesExperience = [];
+let salaries = [];
+let descriptions = [];
+$("div.col-xl-9 > div > div > div:first-child > span").each(
+    (index, element) => {
+        if (index % 2 === 0) {
+            companies.push($(element).text().replace(",", ""));
 
-const company1 = $('div.col-xl-9:has(span:contains("GRA Assessoria Jurídica")) span').eq(0).text().trim();
-const company2 = $('div.col-xl-9:has(span:contains("Minsait company")) span').eq(0).text().trim();
-const company3 = $('div.col-xl-9:has(span:contains("Sos eletrônicos")) span').eq(0).text().trim();
-const company4 = $('div.col-xl-9:has(span:contains("ALPHAVOX")) span').eq(0).text().trim();
+            // find by salary if exist
+            const testIfSalaryExist = $(element)
+                .parent()
+                .parent()
+                .last()
+                .text()
+                .replace(/\s/g, "");
+            const patternSalary = /R\$(.*)/;
+            const existsMatch = testIfSalaryExist.match(patternSalary);
+            if (existsMatch) {
+                const salaryInformation = existsMatch[1].trim();
 
+                const salary = parseInt(
+                    salaryInformation.split("/")[0].replace(".", ""),
+                    10
+                );
+                const salaryTime = salaryInformation.split("/")[1];
+                salaries.push({ value: salary, time: salaryTime });
+            } else {
+                salaries.push({ value: "not informed", time: "not informed" });
+            }
+
+            //find by description if exists
+            const testIfDescriptionExist = $(element)
+                .parent()
+                .parent()
+                .parent()
+                .find("p.text-break-word")
+                .text()
+                .trim()
+                .replace(/[\r\n\s]+/g, " ");
+
+            if (testIfDescriptionExist !== "") {
+                descriptions.push(testIfDescriptionExist);
+            } else {
+                descriptions.push("");
+            }
+        } else {
+            locations.push($(element).text().replace(",", ""));
+        }
+    }
+);
+
+$("div#DivExperiencesContainer div.col-xl-3 div.lh-180").each(
+    (index, element) => {
+        datesExperience.push($(element).text().replace(/\s/g, ""));
+    }
+);
+
+console.log("-------------------------------------");
+experiences.forEach((experience, index) => {
+    experience.company = companies[index];
+    experience.location = locations[index];
+    experience.beginDate = datesExperience[index].split("-")[0];
+    experience.endDate = datesExperience[index].split("-")[1];
+    experience.salary = salaries[index].value;
+    experience.salaryTime = salaries[index].time;
+    experience.description = descriptions[index];
+
+    console.log(experience);
+});
+
+/*
 const description1 = $('div.col-xl-9 div.c-md.text-italic p.text-break-word').eq(0).text().replace(/\s+/g, ' ');
 const description2 = $('div.col-xl-9 div.c-md.text-italic p.text-break-word').eq(1).text().replace(/\s+/g, ' ');
 const description3 = $('div.col-xl-9 div.c-md.text-italic p.text-break-word').eq(2).text().replace(/\s+/g, ' ');
@@ -111,6 +158,8 @@ const number2 = $(".ml-30 > a").first().text().trim()
 
 const email = $(".detail-contact .align-content-center span").last().text().trim();
 
+
+
 // gender
 const GenerStatus = $(".match-personal-data > div > span").eq(0).text().trim();
 // console.log(GenerStatus);
@@ -126,6 +175,7 @@ const age = $(".match-personal-data > div > span").eq(2).text().trim();
 // birth date
 const birthDate = $(".match-personal-data > div > span").eq(4).text().replace(/\s+/g, ' ').trim();
 // console.log(birthDate);
+*/
 
 // const info = {
 //   maritalStatus: maritalStatus,
