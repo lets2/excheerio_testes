@@ -1,5 +1,6 @@
 const fs = require("fs");
 const cheerio = require("cheerio");
+const { Console } = require("console");
 //const $ = cheerio.load('<h2 class="title">Hello world</h2>');
 
 const html = fs.readFileSync("content.html", "utf-8");
@@ -118,14 +119,26 @@ experiences.forEach((experience, index) => {
     experience.salaryTime = salaries[index].time;
     experience.description = descriptions[index];
 
-    console.log(experience);
+    // console.log(experience);
 });
 
-/*
-const description1 = $('div.col-xl-9 div.c-md.text-italic p.text-break-word').eq(0).text().replace(/\s+/g, ' ');
-const description2 = $('div.col-xl-9 div.c-md.text-italic p.text-break-word').eq(1).text().replace(/\s+/g, ' ');
-const description3 = $('div.col-xl-9 div.c-md.text-italic p.text-break-word').eq(2).text().replace(/\s+/g, ' ');
-const description4 = $('div.col-xl-9 div.c-md.text-italic p.text-break-word').eq(3).text().replace(/\s+/g, ' ');
+// Linguagens
+let languages = []
+let languageNames = []
+let languagelevels = []
+$("div#ResumeLanguagesContainer div.chips-languages span").each((index,element)=>{
+    if(index%2 === 0){
+      languageNames.push($(element).text().trim());
+    }
+    else{
+      languagelevels.push($(element).text().trim());
+    }
+    
+})
+languageNames.forEach((name,index)=>{
+  languages.push({name: name,level: languagelevels[index]})
+})
+console.log(languages)
 
 const skillsArray = [];
 $('div.chips-skills > div.chip.chip-gray.text-truncate.no-interactive span').each((index, element) => {
@@ -134,48 +147,52 @@ $('div.chips-skills > div.chip.chip-gray.text-truncate.no-interactive span').eac
     skillsArray.push(skill);
   }
 });
-const salario1 = $('div.col-xl-9 > div > div > div:nth-child(2) > span:nth-child(2)').first().text().trim();
-const salario2 = $('div.col-xl-9 > div > div > div:nth-child(2) > span:nth-child(2)').eq(1).text().trim();
-const salario3 = $('div.col-xl-9 > div > div > div:nth-child(2) > span:nth-child(2)').eq(2).text().trim();
+// const Fulladdress = $(".align-content-center > span").first().text();
+// const address = Fulladdress.split(',')[0];
 
-const beginDate1 = $('div.col-xl-3 > div.fw-600 > div').eq(0).text().trim();
-const beginDate2 = $('div.col-xl-3 > div.fw-600 > div').eq(2).text().trim();
-const beginDate3 = $('div.col-xl-3 > div.fw-600 > div').eq(4).text().trim();
-const beginDate4 = $('div.col-xl-3 > div.fw-600 > div').eq(6).text().trim();
+// const cep = Fulladdress.substring(Fulladdress.lastIndexOf(' ') + 1);
 
-const [startDate1, endDate1] = beginDate2.match(/[A-Za-z]{3}\. \d{4}/g);
-const [startDate2, endDate2] = beginDate3.match(/[A-Za-z]{3}\. \d{4}/g);
-const [startDate3, endDate3] = beginDate4.match(/[A-Za-z]{3}\. \d{4}/g);
+// const number1 = $(".align-content-center > div > span").first().text().trim()
 
-const Fulladdress = $(".align-content-center > span").first().text();
-const address = Fulladdress.split(',')[0];
+// const number2 = $(".ml-30 > a").first().text().trim()
 
-const cep = Fulladdress.substring(Fulladdress.lastIndexOf(' ') + 1);
-
-const number1 = $(".align-content-center > div > span").first().text().trim()
-
-const number2 = $(".ml-30 > a").first().text().trim()
-
-const email = $(".detail-contact .align-content-center span").last().text().trim();
+// const email = $(".detail-contact .align-content-center span").last().text().trim();
 
 
 
-// gender
-const GenerStatus = $(".match-personal-data > div > span").eq(0).text().trim();
-// console.log(GenerStatus);
+// // gender
+// const GenerStatus = $(".match-personal-data > div > span").eq(0).text().trim();
+// // console.log(GenerStatus);
 
 // marital status
 const maritalStatus = $(".match-personal-data > div > span").eq(1).text().trim();
 // console.log(maritalStatus);
 
-// age
-const age = $(".match-personal-data > div > span").eq(2).text().trim();
-// console.log(age);
+// // age
+// const age = $(".match-personal-data > div > span").eq(2).text().trim();
+// // console.log(age);
 
-// birth date
-const birthDate = $(".match-personal-data > div > span").eq(4).text().replace(/\s+/g, ' ').trim();
-// console.log(birthDate);
-*/
+// // birth date
+// const birthDate = $(".match-personal-data > div > span").eq(4).text().replace(/\s+/g, ' ').trim();
+// // console.log(birthDate);
+console.log("----------------------------Meu info-----------------------------------")
+let info = {
+  maritalStatus: maritalStatus,
+  //children: null,
+  //sendWhatsApp: true,
+  //vehicles: [],
+  //licenses: [],
+  //socialNetworks: [],
+  experiences: experiences,
+  languages : languages,
+  skills: skillsArray
+}
+console.log(info)
+
+
+
+
+
 
 // const info = {
 //   maritalStatus: maritalStatus,
