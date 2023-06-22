@@ -1,0 +1,1192 @@
+<div id="divCandidateDetail" class="company-candidate-detail text-break-word pt-30">
+    <input type="hidden" id="hdnEnabledRequestDocuments" data-val="true"
+        data-val-required="The EnabledRequestDocuments field is required." name="EnabledRequestDocuments" value="True">
+    <div class="container">
+        <div class="row no-gutters">
+
+            <div id="divAlert" class="col-12 hidden">
+                <div class="alert alert- alert-dismissible fade show js_divAlertBody d-flex  align-items-center"
+                    role="alert">
+                    <i class="icon icon-interface-alert-circle align-middle font-lg pr-05 pt-1" style="opacity:0.7"></i>
+                    <span class="font-sm fw-600 js_divAlertMssg"> </span>
+                    <a role="button" class="close hidden" data-dismiss="alert">
+                        <span>×</span>
+                    </a>
+                </div>
+            </div>
+            <input type="hidden" id="hdnIdCandidate" value="97043811">
+            <input type="hidden" id="hdnIdCandidateInfojobs">
+            <input type="hidden" id="hdnCandidateName" value="Arthur Tomás">
+            <input type="hidden" id="hdnReferrer" value="CandidateDetail">
+            <div id="NewMessageExtraData" class="hidden">
+                <input type="hidden" id="hdnIsPhoneLead" name="IsPhoneLead" value="False">
+                <input type="hidden" id="hdnPhone" name="Phone" value="11-22180016">
+                <input type="hidden" id="hdnPhone2" name="Phone2" value="11-939593494">
+                <input type="hidden" id="hdnSendWhatsApp" name="SendWhatsApp" value="True">
+                <input type="hidden" id="hdnIsMultiple" name="IsMultiple" value="false">
+                <input type="hidden" id="hdnIsInfojobs" data-val="true"
+                    data-val-required="The IsInfojobs field is required." name="IsInfojobs" value="False">
+            </div>
+            <div class="col bg-white b-a-1 b-r-0">
+
+
+                <header class="detail-header pb-25">
+                    <div class="d-flex no-gutters">
+                        <div>
+                            <figure class="avatar avatar-xl">
+                                <img class="img-avatar"
+                                    src="https://empbraatsstorage.blob.core.windows.net/atsphotos/83302a0e-ecdf-46ab-b963-ecc918db9b0a_4.jpg">
+                            </figure>
+                        </div>
+                        <div class="lh-100">
+                            <div class="text-left pl-30">
+                                <div class="detail-info mb-15">
+                                    <div class="font-3xxl fw-600 lh-100 text-capitalize-first">
+                                        <div class="position-relative pr-110">
+                                            <span>Arthur Tomás</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="font-lg lh-100 mt-05">Assistente administrativo </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="c-md font-sm mt-05 mr-05">Última atualização 30 Mar. 23</div>
+
+                                        <div class="c-md mt-05 lh-100 text-primary">
+                                            <i class="icon icon-user-sync position-relative js_icnInfojobsUpdated"
+                                                style="top: 1px;" data-toggle="tooltip"
+                                                data-original-title="Este CV contém a informação da última modificação do candidato em Infojobs."></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="detail-contact mb-25">
+                                    <div class="align-content-center d-flex">
+                                        <i class="c-lt icon icon-location-pin-1 mr-10"></i>
+                                        <span>Rua Maria Cândida - até 0545 - lado ímpar, São Paulo - SP. CEP
+                                            02071-010</span>
+                                    </div>
+                                    <div class="align-content-center d-flex">
+
+                                        <div>
+                                            <i class="c-lt mr-05 icon icon-phone-speaker align-middle"></i>
+                                            <span>11-22180016</span>
+                                        </div>
+
+                                        <div class="ml-30">
+                                            <i class="icon icon-whatsapp mr-05 c-green align-middle"></i>
+                                            <a href="https://wa.me/5511939593494" class="d-inline-block"
+                                                target="_blank">
+                                                11-939593494
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="align-content-center d-flex">
+                                        <i class="c-lt mr-10 icon icon-paperplane"></i>
+                                        <span>arthurtomasss@gmail.com</span>
+                                    </div>
+                                </div>
+                                <div class="match-events">
+                                    <div class="d-flex">
+                                        <div>
+                                            <a href="javascript:void(0)" id="lnkCreateNewMessage"
+                                                class="btn btn-sm font-xs btn-light-grey px-10 js_lnkCreateNewMessage"
+                                                title="Enviar Mensagem"><i
+                                                    class="lh-100 mt-0 c-md icon icon-envelope-compact"></i></a>
+                                            <a href="javascript:void(0)" id="lnkSuggestLead"
+                                                class="btn btn-sm btn-light-grey ml-10 px-10 js_lnkSuggestLead"
+                                                title="Recomendar à outra vaga"><i
+                                                    class="lh-100 c-md icon icon-user-right"></i></a>
+                                            <a href="javascript:void(0)" id="lnkCreateNewNote"
+                                                class="btn btn-sm btn-light-grey ml-10 px-10 js_lnkCreateNewNote"
+                                                title="Incluir Nota"><i
+                                                    class="lh-100 c-md icon icon-pencil-write"></i></a>
+                                            <a href="javascript:void(0)" id="lnkRequestDocuments" data-backdrop="static"
+                                                class="btn btn-sm btn-light-grey ml-10 px-10 js_lnkRequestDocuments"
+                                                title="Solicitar Documentos"><i
+                                                    class="lh-100 c-md icon icon-file-hand"></i></a>
+                                            <a href="javascript:void(0)" id="btShowPrintCV" title="Imprimir"
+                                                class="btn btn-sm btn-light-grey ml-10 px-10"><i
+                                                    class="lh-100 mt-0 c-md icon icon-print-1"></i></a>
+                                            <a href="javascript:void(0)" id="btShowExportWord"
+                                                title="Exportar a MS-Word"
+                                                class="btn btn-sm btn-light-grey ml-10 px-10"><i
+                                                    class="icon mt-0 icon-file-office-doc"></i></a>
+                                            <a href="javascript:void(0)" id="lnkDeleteCandidate"
+                                                title="Eliminar Candidato"
+                                                class="btn btn-sm btn-light-grey ml-10 px-10 js_lnkDeleteCandidateModal"><i
+                                                    class="icon icon-user-close"></i></a>
+                                        </div>
+
+                                        <a id="btnShowTag" href="javascript:void(0)" title="Incluir Tag"
+                                            class="btn btn-sm btn-light-grey ml-10 px-10"><i id="btnShowTagIcon"
+                                                class="lh-100 icon icon-tag-add"></i></a>
+                                    </div>
+                                </div>
+                                <div id="divSelectTags" class="hidden mt-10">
+                                    <div class="position-relative w-100" style="max-width:230px">
+                                        <div class="input-group right">
+                                            <input id="textTags" type="text" maxlength="100"
+                                                class="form-control form-control-sm" placeholder="Incluir Tag"
+                                                autocomplete="off">
+                                            <div class="input-group-append" id="divBtnAddTag">
+                                                <a id="btnAddTag" href="javascript:void(0)" title="Incluir Tag"
+                                                    class="btn btn-sm btn-light-grey c-md px-10 disabled"><i
+                                                        class="font-lg icon icon-check lh-100"></i></a>
+                                            </div>
+                                        </div>
+                                        <div id="textTagsList" class="autocomplete-wrapper">
+                                            <div class="autocomplete-suggestions "
+                                                style="top: 0px; left: 0px; width: 0px;"></div>
+                                        </div>
+                                        <div class="hidden" id="divErrorTag">
+                                            <span class="c-red d-inline-block pl-15 mt-2 field-validation-error">
+                                                <i class="align-text-bottom icon icon-interface-alert-circle mr-05"></i>
+                                                <span id="lbnErrorTag"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="divChipsTags" class=" d-flex align-items-center flex-wrap mt-05">
+                                </div>
+                                <input type="hidden" id="hdnIdCandidateResume" value="245067931">
+                                <input type="hidden" id="hdnIdCompany" value="242">
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+
+                <nav class="bg-white nav nav-tabs nav-tabs-detail" id="NavTabsCandidate">
+                    <a href="javascript:void(0)" class="nav-item nav-link  active " id="BtnTabResume">CV</a>
+                    <a href="javascript:void(0)" class="nav-item nav-link  " id="BtnTabTimeline">Timeline</a>
+                    <a href="javascript:void(0)" class="nav-item nav-link  hidden" id="BtnTabMessages">Mensagens</a>
+                    <a href="javascript:void(0)" class="nav-item nav-link  hidden" id="BtnTabEvaluations">Avaliações</a>
+                    <a href="javascript:void(0)" class="nav-item nav-link  hidden" id="BtnTabResults">Resultados</a>
+                    <a href="javascript:void(0)" class="nav-item nav-link  hidden" id="BtnTabNotes">Notas</a>
+                    <a href="javascript:void(0)" class="nav-item nav-link  hidden" id="BtnTabDocuments">Documentos</a>
+                </nav>
+
+                <div id="CandidateResumeDetail" class="tab-content">
+                    <div id="TabResume" class="tab-pane p-0 active">
+                        <div>
+
+
+                            <div class="bg-white pb-80 pt-0 resume-group position-relative">
+
+                                <div class="px-xl-30 px-15">
+
+                                    <div id="ResumeProfile" class="resume-item mt-0 b-t-0 js_editCvSection">
+                                        <div class="d-flex align-items-center">
+                                            <div class="font-2lg fw-600 mb-15">Perfil e objetivos <a
+                                                    href="javascript:void(0)"
+                                                    class="btn btn-sm btn-link c-md js_lnkEditCvSection hidden"
+                                                    id="EditProfile" data-toggle="tooltip" data-placement="top"
+                                                    title="Editar"><i class="icon icon-pencil-1"></i></a></div>
+                                        </div>
+                                        <div id="ResumeProfileContainer" class="js_editCvSectionContainer">
+
+                                            <div id="Summary">
+                                                <div class="row no-gutters">
+                                                    <div class="col-xl-3">
+                                                        <div class="fw-600">Resumo</div>
+                                                    </div>
+                                                    <div class="col-xl-9">
+                                                        <div>
+                                                            <p class="text-break-word">Minhas habilidades incluem ter
+                                                                boa comunicação e dicção, trabalhar bem em equipe, sou
+                                                                competitivo de uma forma saudável e gosto de mostrar do
+                                                                que sou capaz criando metas pessoais para um crescimento
+                                                                pessoal.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="Salary" class="mb-20">
+                                                <div class="row no-gutters">
+                                                    <div class="col-xl-3">
+                                                        <div class="fw-600">Pretensão salarial</div>
+                                                    </div>
+                                                    <div class="col-xl-9">
+                                                        <div>
+                                                            Entre R$
+                                                            <span>1.105</span>
+                                                            e R$
+                                                            <span>2.000</span>
+                                                            (Bruto Mensal)
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="WorkingHours" class="mb-20">
+                                                <div class="row no-gutters">
+                                                    <div class="col-xl-3">
+                                                        <div class="fw-600">Jornada</div>
+                                                    </div>
+                                                    <div class="col-xl-9">
+                                                        <div>Período Integral</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="ContractWorkType" class="mb-20">
+                                                <div class="row no-gutters">
+                                                    <div class="col-xl-3">
+                                                        <div class="fw-600">Contrato</div>
+                                                    </div>
+                                                    <div class="col-xl-9">
+                                                        <div>Efetivo – CLT</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div id="ResumeExperiences" class="resume-item js_editCvSection">
+
+
+                                        <div class="font-2lg fw-600 mb-20 lh-100 page-break-before-avoid">
+                                            <span>Experiência <a href="javascript:void(0)"
+                                                    class="btn btn-xs btn-light-grey ml-2 js_lnkEditCvSection hidden js_editExperience"><i
+                                                        class="icon icon-add-3 position-relative"
+                                                        style="top: 1px"></i></a></span>
+                                            <span class="c-md font-lg fw-400"></span>
+                                        </div>
+
+                                        <div id="DivExperiencesContainer" class="js_editCvSectionContainer">
+
+                                            <div class="row no-gutters mb-20 js_aggregateContainer">
+                                                <div class="col-xl-3">
+                                                    <div class="fw-600">
+                                                        <div class="lh-180">
+
+                                                            Out. 2022 - Atual
+                                                        </div>
+                                                        <div class="c-md fw-400 lh-140">
+                                                            <span>(8 meses)</span>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-9">
+                                                    <div>
+                                                        <div class="font-md d-flex align-items-center">
+                                                            <strong>Assistente administrativo</strong>
+                                                            <div class="ml-auto">
+                                                                <a href="javascript:void(0)"
+                                                                    class="c-md font-nm js_lnkEditCvSection hidden js_editExperience"
+                                                                    data-idcandidateresumeexperience="201219809"
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Editar"><i
+                                                                        class="icon icon-pencil-1"></i></a>
+                                                                <a href="javascript:void(0)"
+                                                                    class="c-md ml-3 font-nm js_lnkEditCvSection hidden js_deleteExperience"
+                                                                    data-idcandidateresumeexperience="201219809"
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Apagar"><i class="icon icon-bin"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div>
+                                                                <span>GRA Assessoria Jurídica,</span>
+                                                                <span>São Paulo - SP</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="c-md text-italic">
+                                                            <p class="text-break-word"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row no-gutters mb-20 js_aggregateContainer">
+                                                <div class="col-xl-3">
+                                                    <div class="fw-600">
+                                                        <div class="lh-180">
+
+                                                            Jun. 2022 -
+                                                            Out. 2022
+                                                        </div>
+                                                        <div class="c-md fw-400 lh-140">
+                                                            <span>(4 meses)</span>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-9">
+                                                    <div>
+                                                        <div class="font-md d-flex align-items-center">
+                                                            <strong>Analista Pessoal Pleno</strong>
+                                                            <div class="ml-auto">
+                                                                <a href="javascript:void(0)"
+                                                                    class="c-md font-nm js_lnkEditCvSection hidden js_editExperience"
+                                                                    data-idcandidateresumeexperience="204580354"
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Editar"><i
+                                                                        class="icon icon-pencil-1"></i></a>
+                                                                <a href="javascript:void(0)"
+                                                                    class="c-md ml-3 font-nm js_lnkEditCvSection hidden js_deleteExperience"
+                                                                    data-idcandidateresumeexperience="204580354"
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Apagar"><i class="icon icon-bin"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div>
+                                                                <span>Minsait company,</span>
+                                                                <span>São Paulo - SP</span>
+                                                            </div>
+                                                            <div>
+                                                                <span>Salário: R$</span>
+
+                                                                <span>1.400</span>
+
+                                                                <span>/Mensal</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="c-md text-italic">
+                                                            <p class="text-break-word">Venda de prestação de serviços
+                                                                Google (Google partner e Google Ads)</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row no-gutters mb-20 js_aggregateContainer">
+                                                <div class="col-xl-3">
+                                                    <div class="fw-600">
+                                                        <div class="lh-180">
+
+                                                            Jan. 2022 -
+                                                            Mai. 2022
+                                                        </div>
+                                                        <div class="c-md fw-400 lh-140">
+                                                            <span>(4 meses)</span>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-9">
+                                                    <div>
+                                                        <div class="font-md d-flex align-items-center">
+                                                            <strong>Empacotador</strong>
+                                                            <div class="ml-auto">
+                                                                <a href="javascript:void(0)"
+                                                                    class="c-md font-nm js_lnkEditCvSection hidden js_editExperience"
+                                                                    data-idcandidateresumeexperience="170440168"
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Editar"><i
+                                                                        class="icon icon-pencil-1"></i></a>
+                                                                <a href="javascript:void(0)"
+                                                                    class="c-md ml-3 font-nm js_lnkEditCvSection hidden js_deleteExperience"
+                                                                    data-idcandidateresumeexperience="170440168"
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Apagar"><i class="icon icon-bin"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div>
+                                                                <span>Sos eletrônicos,</span>
+                                                                <span>São Paulo - SP</span>
+                                                            </div>
+                                                            <div>
+                                                                <span>Salário: R$</span>
+
+                                                                <span>1.300</span>
+
+                                                                <span>/Mensal</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="c-md text-italic">
+                                                            <p class="text-break-word">Empacotamento de produtos
+                                                                vendidos em marketplace, atendimento ao cliente e
+                                                                organização de estoque.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row no-gutters mb-20 js_aggregateContainer">
+                                                <div class="col-xl-3">
+                                                    <div class="fw-600">
+                                                        <div class="lh-180">
+
+                                                            Mar. 2020 -
+                                                            Out. 2021
+                                                        </div>
+                                                        <div class="c-md fw-400 lh-140">
+                                                            <span>(1 ano e 7 meses)</span>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-9">
+                                                    <div>
+                                                        <div class="font-md d-flex align-items-center">
+                                                            <strong>Operador de Telemarketing</strong>
+                                                            <div class="ml-auto">
+                                                                <a href="javascript:void(0)"
+                                                                    class="c-md font-nm js_lnkEditCvSection hidden js_editExperience"
+                                                                    data-idcandidateresumeexperience="153766769"
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Editar"><i
+                                                                        class="icon icon-pencil-1"></i></a>
+                                                                <a href="javascript:void(0)"
+                                                                    class="c-md ml-3 font-nm js_lnkEditCvSection hidden js_deleteExperience"
+                                                                    data-idcandidateresumeexperience="153766769"
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Apagar"><i class="icon icon-bin"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div>
+                                                                <span>ALPHAVOX,</span>
+                                                                <span>São Paulo - SP</span>
+                                                            </div>
+                                                            <div>
+                                                                <span>Salário: R$</span>
+
+                                                                <span>1.105</span>
+
+                                                                <span>/Mensal</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="c-md text-italic">
+                                                            <p class="text-break-word">ativo de vendas passando por dois
+                                                                produtos Bradesco cartões e Lar de Maria </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="ResumeStudies" class="resume-item js_editCvSection">
+
+                                        <div class="font-2lg fw-600 mb-20 lh-100 page-break-before-avoid">
+                                            Formação <a href="javascript:void(0)"
+                                                class="btn btn-xs btn-light-grey ml-2 js_lnkEditCvSection hidden js_editStudy"><i
+                                                    class="icon icon-add-3 position-relative" style="top:1px"></i></a>
+                                        </div>
+
+                                        <div id="DivStudiesContainer" class="js_editCvSectionContainer">
+
+                                            <div class="row no-gutters mb-20 js_aggregateContainer">
+                                                <div class="col-xl-3">
+                                                    <div class="fw-600">
+                                                        <div class="lh-180">
+
+                                                            Fev. 2022 -
+
+                                                            Dez. 2026
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-9">
+                                                    <div>
+                                                        <div class="font-md d-flex align-items-center">
+                                                            <strong>Ensino Superior Ciências contábeis</strong>
+                                                            <div class="ml-auto">
+                                                                <a href="javascript:void(0)"
+                                                                    class="c-md font-nm js_lnkEditCvSection hidden js_editStudy"
+                                                                    data-idcandidateresumestudy="127465895"
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Editar"><i
+                                                                        class="icon icon-pencil-1"></i></a>
+                                                                <a href="javascript:void(0)"
+                                                                    class="c-md font-nm ml-3 js_lnkEditCvSection hidden js_deleteStudy"
+                                                                    data-idcandidateresumestudy="127465895"
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Apagar"><i class="icon icon-bin"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <span>estacio uniradial,</span>
+                                                            <span>São Paulo - SP</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="ResumeSkills" class="resume-item js_editCvSection">
+                                        <div class="font-2lg fw-600 mb-20 lh-100 page-break-before-avoid">Competências
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-sm btn-link c-md js_lnkEditCvSection hidden"
+                                                id="EditSkills" data-toggle="tooltip" data-placement="top"
+                                                title="Editar"><i class="icon icon-pencil-1"></i></a></div>
+                                        <div id="ResumeSkillsContainer">
+
+                                            <div class="chips-skills js_editCvSectionContainer">
+                                                <div class="chip chip-gray text-truncate  no-interactive">
+                                                    <span>criatividade</span>
+                                                </div>
+                                                <div class="chip chip-gray text-truncate  no-interactive">
+                                                    <span>comunicação</span>
+                                                </div>
+                                                <div class="chip chip-gray text-truncate  no-interactive">
+                                                    <span>visão no cliente</span>
+                                                </div>
+                                                <div class="chip chip-gray text-truncate  no-interactive">
+                                                    <span>visão do negócio</span>
+                                                </div>
+                                                <div class="chip chip-gray text-truncate  no-interactive">
+                                                    <span>trabalho em equipe</span>
+                                                </div>
+                                                <div class="chip chip-gray text-truncate  no-interactive">
+                                                    <span>iniciativa</span>
+                                                </div>
+                                                <div class="chip chip-gray text-truncate  no-interactive">
+                                                    <span>Flexibilidade</span>
+                                                </div>
+                                                <div class="chip chip-gray text-truncate  no-interactive">
+                                                    <span>foco</span>
+                                                </div>
+                                                <div class="chip chip-gray text-truncate  no-interactive">
+                                                    <span>digitação</span>
+                                                </div>
+                                                <div class="chip chip-gray text-truncate  no-interactive">
+                                                    <span>Excel intermediário</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="ResumeLanguages" class="resume-item js_editCvSection">
+                                        <div class="font-2lg fw-600 mb-20 lh-100 page-break-before-avoid">Idiomas <a
+                                                href="javascript:void(0)"
+                                                class="btn btn-sm btn-link c-md js_lnkEditCvSection hidden"
+                                                id="EditLanguages" data-toggle="tooltip" data-placement="top"
+                                                title="Editar"><i class="icon icon-pencil-1"></i></a></div>
+                                        <div id="ResumeLanguagesContainer">
+
+                                            <div class="chips-languages js_editCvSectionContainer">
+                                                <div class="chip chip-gray text-truncate  no-interactive">
+                                                    <span> Português</span>
+                                                    <span>(Nativo)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="ResumeAdditionalInformation" class="resume-item js_editCvSection">
+                                        <div class="font-2lg fw-600 mb-20 lh-100 page-break-before-avoid">Informações
+                                            complementares <a href="javascript:void(0)"
+                                                class="btn btn-sm btn-link c-md js_lnkEditCvSection hidden"
+                                                id="EditAdditionalInformation" data-toggle="tooltip"
+                                                data-placement="top" title="Editar"><i
+                                                    class="icon icon-pencil-1"></i></a></div>
+                                        <div id="ResumeAdditionalInformationContainer"
+                                            class="js_editCvSectionContainer">
+
+                                            <div class="align-content-center d-flex mb-10">
+                                                <i class="c-md mr-15 icon icon-travel-departure"></i>
+                                                <span>Possui disponibilidade para viajar.</span>
+                                            </div>
+                                            <div class="align-content-center d-flex mb-10">
+                                                <i class="c-md mr-15 icon icon-travel-bag-2"></i>
+                                                <span>Possui disponibilidade para mudar de domicílio </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+                                    <div id="divResumeContact" class="resume-item">
+                                        <div id="ResumePersonalInformationContainer">
+
+                                            <div id="ResumeContactData">
+                                                <div class="font-2lg fw-600 mb-20 page-break-before-avoid">Dados
+                                                    pessoais e de contato <a href="javascript:void(0)"
+                                                        class="btn btn-sm c-md btn-link js_lnkEditCvSection hidden js_editPersonalInformation"
+                                                        data-toggle="tooltip" data-placement="top" title="Editar"><i
+                                                            class="icon icon-pencil-1"></i></a></div>
+                                                <div class="match-personal-data mb-15 c-md">
+                                                    <strong class="font-md c-drk">Arthur Tomás</strong>
+                                                    <div>
+                                                        <span>Masculino</span>
+                                                        <span>Solteiro</span>
+                                                        <span>
+                                                            de
+                                                            <span> 24</span>
+                                                            anos
+                                                        </span>
+                                                        <span>
+                                                            (Nasceu 11 fevereiro de 1999)
+                                                        </span>
+                                                    </div>
+
+                                                    <div>Brasileiro(a) <span class="mx-10 font-xl position-relative"
+                                                            style="top:1px;line-height:16px">•</span> CPF 11000133699
+                                                    </div>
+                                                </div>
+                                                <div class="match-contact-data c-md">
+                                                    <div class="align-content-center d-flex mb-10">
+                                                        <i class="c-md icon icon-location-pin-1 mr-15"></i>
+                                                        <span>Rua Maria Cândida - até 0545 - lado ímpar, São Paulo - SP.
+                                                            CEP 02071-010</span>
+                                                    </div>
+                                                    <div class="align-content-center d-flex mb-10">
+                                                        <i class="c-md mr-15 icon icon-phone-speaker"></i>
+                                                        <span>11-22180016 / 11-939593494</span>
+                                                    </div>
+
+                                                    <div class="align-content-center d-flex mb-10">
+                                                        <i class="c-md mr-15 icon icon-paperplane"></i>
+                                                        <span>arthurtomasss@gmail.com</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="TabTimeline" class="tab-pane  p-0 ">
+                        <div>
+
+
+                            <div class="bg-white">
+                                <div class="pt-20 px-30">
+                                    <div class="row no-gutters">
+                                        <div class="col-auto">
+                                            <div class="mr-05">
+                                                <form id="DatePickerRangeForm" novalidate="novalidate">
+
+
+                                                    <div id="DatepickerDiv"
+                                                        class="form-inline datepicker-range-readonly">
+                                                        <div class="form-group-inline mr-10">
+                                                            <div class="input-group input-group-sm">
+                                                                <div class="input-group-prepend position-relative">
+                                                                    <div class="dropdown dropdown-sm js_CustomDropdown">
+                                                                        <button
+                                                                            class="btn btn-sm btn-light-grey dropdown-toggle js_customDDbt addon pr-05 pl-10"
+                                                                            title="Selecione uma data ou um intervalo de datas."
+                                                                            data-toggle="dropdown">
+                                                                            <span
+                                                                                class="dropdown-notext js_customDDLabel"><i
+                                                                                    class="icon icon-calendar-1 c-drk"></i></span>
+                                                                        </button>
+                                                                        <div class="dropdown-menu">
+                                                                            <a href="javascript:void(0)"
+                                                                                class="dropdown-item js_customDDitem _js_lnkDateRange "
+                                                                                data-begindate="20/06/2023"
+                                                                                data-enddate="20/06/2023">
+                                                                                <span>Hoje</span>
+                                                                            </a>
+                                                                            <a href="javascript:void(0)"
+                                                                                class="dropdown-item js_customDDitem _js_lnkDateRange "
+                                                                                data-begindate="13/06/2023"
+                                                                                data-enddate="20/06/2023">
+                                                                                <span>Últimos 7 dias</span>
+                                                                            </a>
+                                                                            <a href="javascript:void(0)"
+                                                                                class="dropdown-item js_customDDitem  _js_lnkDateRange "
+                                                                                data-begindate="21/05/2023"
+                                                                                data-enddate="20/06/2023">
+                                                                                <span>Últimos 30 dias</span>
+                                                                            </a>
+                                                                            <a href="javascript:void(0)"
+                                                                                class="dropdown-item js_customDDitem  _js_lnkDateRange "
+                                                                                data-begindate="20/03/2023"
+                                                                                data-enddate="20/06/2023">
+                                                                                <span>Últimos 3 meses</span>
+                                                                            </a>
+                                                                            <a href="javascript:void(0)"
+                                                                                class="dropdown-item js_customDDitem  _js_lnkDateRange "
+                                                                                data-begindate="20/06/2022"
+                                                                                data-enddate="20/06/2023">
+                                                                                <span>Último ano</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <input type="text" id="DatepickerRange"
+                                                                    autocomplete="off"
+                                                                    class="form-control form-control-sm" value=""
+                                                                    data-range="true"
+                                                                    data-multiple-dates-separator=" - "
+                                                                    placeholder="Todo o período">
+                                                            </div>
+                                                            <span data-valmsg-for="BeginDate" data-valmsg-replace="true"
+                                                                class="c-red font-sm lh-130 field-validation-valid"></span>
+                                                            <span data-valmsg-for="EndDate" data-valmsg-replace="true"
+                                                                class="c-red font-sm lh-130 field-validation-valid"></span>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <input type="text" class="hidden" id="BeginDate" value=""
+                                                        data-val="true"
+                                                        data-val-datecompare="A data de início deve ser menor ou igual à data de término."
+                                                        data-val-datecompare-currentvalue=""
+                                                        data-val-datecompare-dependent-optional="true"
+                                                        data-val-datecompare-dependent-todatetimeinput="EndDate"
+                                                        data-val-regex="Formato incorreto"
+                                                        data-val-regex-pattern="^(?=\d)(?:(?:31(?!.(?:0?[2469]|11))|(?:30|29)(?!.0?2)|29(?=.0?2.(?:(?:(?:19|20)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00)))(?: |$))|(?:2[0-8]|1\d|0?[1-9]))([-./])(?:1[012]|0?[1-9])\1(?:19|20)?\d\d(?:(?= \d) |$))?$"
+                                                        name="BeginDate">
+                                                    <input type="text" class="hidden" id="EndDate" value=""
+                                                        data-val="true"
+                                                        data-val-datecompare="A data de término deve ser maior ou igual à data de início."
+                                                        data-val-datecompare-currentvalue=""
+                                                        data-val-datecompare-dependent-fromdatetimeinput="BeginDate"
+                                                        data-val-datecompare-dependent-optional="true"
+                                                        data-val-regex="Formato incorreto"
+                                                        data-val-regex-pattern="^(?=\d)(?:(?:31(?!.(?:0?[2469]|11))|(?:30|29)(?!.0?2)|29(?=.0?2.(?:(?:(?:19|20)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00)))(?: |$))|(?:2[0-8]|1\d|0?[1-9]))([-./])(?:1[012]|0?[1-9])\1(?:19|20)?\d\d(?:(?= \d) |$))?$"
+                                                        name="EndDate">
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="dropdown dropdown-sm mr-15 js_CustomDropdown">
+                                                <button id="FilterIdVacancy"
+                                                    class="btn btn-sm btn-block btn-light-grey dropdown-toggle js_customDDbt"
+                                                    type="button" data-toggle="dropdown"><span>Todos os
+                                                        Processos</span></button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item js_customDDitem active" id=""><span>Todos os
+                                                            Processos</span></a>
+                                                    <div class="dropdown-divider m-0"></div>
+
+                                                    <div class="dropdown-divider m-0"></div>
+                                                    <a class="dropdown-item js_customDDitem" id="468736"><span>Auxiliar
+                                                            de atendimento</span></a>
+                                                </div>
+                                                <input type="text" id="hdn_FilterIdVacancy" class="hidden">
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+
+                                            <div class="dropdown dropdown-sm js_dropdown-no-close">
+                                                <button class="btn btn-block btn-light-grey btn-sm dropdown-toggle "
+                                                    type="button" data-toggle="dropdown">
+                                                    <span>Tipos de Eventos</span>
+                                                </button>
+                                                <div
+                                                    class="dropdown-menu dropdown-sm p-15 m-lastchild-0 js_dropdown-no-close-dropdown-menu">
+
+                                                    <input type="hidden" name="MultipleSelect.Items.index"
+                                                        autocomplete="off" value="dae00f36-69c2-4941-ae65-2f6b160ee483">
+                                                    <input type="hidden"
+                                                        id="MultipleSelect_Items_dae00f36-69c2-4941-ae65-2f6b160ee483__Value"
+                                                        name="MultipleSelect.Items[dae00f36-69c2-4941-ae65-2f6b160ee483].Value"
+                                                        value="0">
+                                                    <label class="custom-control custom-checkbox p-0"
+                                                        for="MultipleSelect_Items_dae00f36-69c2-4941-ae65-2f6b160ee483__Checked">
+                                                        <input type="checkbox"
+                                                            class="custom-control-input js_multiSelectItemCheckBox"
+                                                            data-val="true"
+                                                            data-val-required="The Checked field is required."
+                                                            id="MultipleSelect_Items_dae00f36-69c2-4941-ae65-2f6b160ee483__Checked"
+                                                            name="MultipleSelect.Items[dae00f36-69c2-4941-ae65-2f6b160ee483].Checked"
+                                                            value="true"><input
+                                                            name="MultipleSelect.Items[dae00f36-69c2-4941-ae65-2f6b160ee483].Checked"
+                                                            type="hidden" value="false">
+                                                        <span class="custom-control-label"><span
+                                                                class="nowrap">Movimentos no Processo</span></span>
+                                                    </label>
+
+                                                    <input type="hidden" name="MultipleSelect.Items.index"
+                                                        autocomplete="off" value="a9a57aa7-8aef-411e-ab8a-960cb8f08ebf">
+                                                    <input type="hidden"
+                                                        id="MultipleSelect_Items_a9a57aa7-8aef-411e-ab8a-960cb8f08ebf__Value"
+                                                        name="MultipleSelect.Items[a9a57aa7-8aef-411e-ab8a-960cb8f08ebf].Value"
+                                                        value="1">
+                                                    <label class="custom-control custom-checkbox p-0"
+                                                        for="MultipleSelect_Items_a9a57aa7-8aef-411e-ab8a-960cb8f08ebf__Checked">
+                                                        <input type="checkbox"
+                                                            class="custom-control-input js_multiSelectItemCheckBox"
+                                                            data-val="true"
+                                                            data-val-required="The Checked field is required."
+                                                            id="MultipleSelect_Items_a9a57aa7-8aef-411e-ab8a-960cb8f08ebf__Checked"
+                                                            name="MultipleSelect.Items[a9a57aa7-8aef-411e-ab8a-960cb8f08ebf].Checked"
+                                                            value="true"><input
+                                                            name="MultipleSelect.Items[a9a57aa7-8aef-411e-ab8a-960cb8f08ebf].Checked"
+                                                            type="hidden" value="false">
+                                                        <span class="custom-control-label"><span
+                                                                class="nowrap">Mensagens</span></span>
+                                                    </label>
+
+                                                    <input type="hidden" name="MultipleSelect.Items.index"
+                                                        autocomplete="off" value="337ea58a-4638-4c50-bca9-c8e6ccf0a4c2">
+                                                    <input type="hidden"
+                                                        id="MultipleSelect_Items_337ea58a-4638-4c50-bca9-c8e6ccf0a4c2__Value"
+                                                        name="MultipleSelect.Items[337ea58a-4638-4c50-bca9-c8e6ccf0a4c2].Value"
+                                                        value="2">
+                                                    <label class="custom-control custom-checkbox p-0"
+                                                        for="MultipleSelect_Items_337ea58a-4638-4c50-bca9-c8e6ccf0a4c2__Checked">
+                                                        <input type="checkbox"
+                                                            class="custom-control-input js_multiSelectItemCheckBox"
+                                                            data-val="true"
+                                                            data-val-required="The Checked field is required."
+                                                            id="MultipleSelect_Items_337ea58a-4638-4c50-bca9-c8e6ccf0a4c2__Checked"
+                                                            name="MultipleSelect.Items[337ea58a-4638-4c50-bca9-c8e6ccf0a4c2].Checked"
+                                                            value="true"><input
+                                                            name="MultipleSelect.Items[337ea58a-4638-4c50-bca9-c8e6ccf0a4c2].Checked"
+                                                            type="hidden" value="false">
+                                                        <span class="custom-control-label"><span
+                                                                class="nowrap">Entrevistas</span></span>
+                                                    </label>
+
+                                                    <input type="hidden" name="MultipleSelect.Items.index"
+                                                        autocomplete="off" value="a6c561e6-cd1f-467b-a7df-a6e8b373c475">
+                                                    <input type="hidden"
+                                                        id="MultipleSelect_Items_a6c561e6-cd1f-467b-a7df-a6e8b373c475__Value"
+                                                        name="MultipleSelect.Items[a6c561e6-cd1f-467b-a7df-a6e8b373c475].Value"
+                                                        value="3">
+                                                    <label class="custom-control custom-checkbox p-0"
+                                                        for="MultipleSelect_Items_a6c561e6-cd1f-467b-a7df-a6e8b373c475__Checked">
+                                                        <input type="checkbox"
+                                                            class="custom-control-input js_multiSelectItemCheckBox"
+                                                            data-val="true"
+                                                            data-val-required="The Checked field is required."
+                                                            id="MultipleSelect_Items_a6c561e6-cd1f-467b-a7df-a6e8b373c475__Checked"
+                                                            name="MultipleSelect.Items[a6c561e6-cd1f-467b-a7df-a6e8b373c475].Checked"
+                                                            value="true"><input
+                                                            name="MultipleSelect.Items[a6c561e6-cd1f-467b-a7df-a6e8b373c475].Checked"
+                                                            type="hidden" value="false">
+                                                        <span class="custom-control-label"><span class="nowrap">Eventos
+                                                                personalizados</span></span>
+                                                    </label>
+
+                                                    <input type="hidden" name="MultipleSelect.Items.index"
+                                                        autocomplete="off" value="fa7c4b22-4968-401d-be2d-2690a789861a">
+                                                    <input type="hidden"
+                                                        id="MultipleSelect_Items_fa7c4b22-4968-401d-be2d-2690a789861a__Value"
+                                                        name="MultipleSelect.Items[fa7c4b22-4968-401d-be2d-2690a789861a].Value"
+                                                        value="4">
+                                                    <label class="custom-control custom-checkbox p-0"
+                                                        for="MultipleSelect_Items_fa7c4b22-4968-401d-be2d-2690a789861a__Checked">
+                                                        <input type="checkbox"
+                                                            class="custom-control-input js_multiSelectItemCheckBox"
+                                                            data-val="true"
+                                                            data-val-required="The Checked field is required."
+                                                            id="MultipleSelect_Items_fa7c4b22-4968-401d-be2d-2690a789861a__Checked"
+                                                            name="MultipleSelect.Items[fa7c4b22-4968-401d-be2d-2690a789861a].Checked"
+                                                            value="true"><input
+                                                            name="MultipleSelect.Items[fa7c4b22-4968-401d-be2d-2690a789861a].Checked"
+                                                            type="hidden" value="false">
+                                                        <span class="custom-control-label"><span class="nowrap">Vídeo
+                                                                Entrevistas</span></span>
+                                                    </label>
+
+                                                    <input type="hidden" name="MultipleSelect.Items.index"
+                                                        autocomplete="off" value="79bb96d8-6726-42c5-a4f6-30a06c518d1c">
+                                                    <input type="hidden"
+                                                        id="MultipleSelect_Items_79bb96d8-6726-42c5-a4f6-30a06c518d1c__Value"
+                                                        name="MultipleSelect.Items[79bb96d8-6726-42c5-a4f6-30a06c518d1c].Value"
+                                                        value="5">
+                                                    <label class="custom-control custom-checkbox p-0"
+                                                        for="MultipleSelect_Items_79bb96d8-6726-42c5-a4f6-30a06c518d1c__Checked">
+                                                        <input type="checkbox"
+                                                            class="custom-control-input js_multiSelectItemCheckBox"
+                                                            data-val="true"
+                                                            data-val-required="The Checked field is required."
+                                                            id="MultipleSelect_Items_79bb96d8-6726-42c5-a4f6-30a06c518d1c__Checked"
+                                                            name="MultipleSelect.Items[79bb96d8-6726-42c5-a4f6-30a06c518d1c].Checked"
+                                                            value="true"><input
+                                                            name="MultipleSelect.Items[79bb96d8-6726-42c5-a4f6-30a06c518d1c].Checked"
+                                                            type="hidden" value="false">
+                                                        <span class="custom-control-label"><span class="nowrap">Teste e
+                                                                Questionários</span></span>
+                                                    </label>
+
+                                                    <input type="hidden" name="MultipleSelect.Items.index"
+                                                        autocomplete="off" value="284d3f41-ee84-4e60-984e-014d23aee7f1">
+                                                    <input type="hidden"
+                                                        id="MultipleSelect_Items_284d3f41-ee84-4e60-984e-014d23aee7f1__Value"
+                                                        name="MultipleSelect.Items[284d3f41-ee84-4e60-984e-014d23aee7f1].Value"
+                                                        value="6">
+                                                    <label class="custom-control custom-checkbox p-0"
+                                                        for="MultipleSelect_Items_284d3f41-ee84-4e60-984e-014d23aee7f1__Checked">
+                                                        <input type="checkbox"
+                                                            class="custom-control-input js_multiSelectItemCheckBox"
+                                                            data-val="true"
+                                                            data-val-required="The Checked field is required."
+                                                            id="MultipleSelect_Items_284d3f41-ee84-4e60-984e-014d23aee7f1__Checked"
+                                                            name="MultipleSelect.Items[284d3f41-ee84-4e60-984e-014d23aee7f1].Checked"
+                                                            value="true"><input
+                                                            name="MultipleSelect.Items[284d3f41-ee84-4e60-984e-014d23aee7f1].Checked"
+                                                            type="hidden" value="false">
+                                                        <span class="custom-control-label"><span
+                                                                class="nowrap">Revisões</span></span>
+                                                    </label>
+
+                                                    <input type="hidden" name="MultipleSelect.Items.index"
+                                                        autocomplete="off" value="f780ba6b-5a67-4662-9b1e-ab5455affede">
+                                                    <input type="hidden"
+                                                        id="MultipleSelect_Items_f780ba6b-5a67-4662-9b1e-ab5455affede__Value"
+                                                        name="MultipleSelect.Items[f780ba6b-5a67-4662-9b1e-ab5455affede].Value"
+                                                        value="7">
+                                                    <label class="custom-control custom-checkbox p-0"
+                                                        for="MultipleSelect_Items_f780ba6b-5a67-4662-9b1e-ab5455affede__Checked">
+                                                        <input type="checkbox"
+                                                            class="custom-control-input js_multiSelectItemCheckBox"
+                                                            data-val="true"
+                                                            data-val-required="The Checked field is required."
+                                                            id="MultipleSelect_Items_f780ba6b-5a67-4662-9b1e-ab5455affede__Checked"
+                                                            name="MultipleSelect.Items[f780ba6b-5a67-4662-9b1e-ab5455affede].Checked"
+                                                            value="true"><input
+                                                            name="MultipleSelect.Items[f780ba6b-5a67-4662-9b1e-ab5455affede].Checked"
+                                                            type="hidden" value="false">
+                                                        <span class="custom-control-label"><span
+                                                                class="nowrap">Avaliações</span></span>
+                                                    </label>
+
+                                                    <input type="hidden" name="MultipleSelect.Items.index"
+                                                        autocomplete="off" value="ed8a997c-e8be-4c87-88ae-9a673aef5915">
+                                                    <input type="hidden"
+                                                        id="MultipleSelect_Items_ed8a997c-e8be-4c87-88ae-9a673aef5915__Value"
+                                                        name="MultipleSelect.Items[ed8a997c-e8be-4c87-88ae-9a673aef5915].Value"
+                                                        value="8">
+                                                    <label class="custom-control custom-checkbox p-0"
+                                                        for="MultipleSelect_Items_ed8a997c-e8be-4c87-88ae-9a673aef5915__Checked">
+                                                        <input type="checkbox"
+                                                            class="custom-control-input js_multiSelectItemCheckBox"
+                                                            data-val="true"
+                                                            data-val-required="The Checked field is required."
+                                                            id="MultipleSelect_Items_ed8a997c-e8be-4c87-88ae-9a673aef5915__Checked"
+                                                            name="MultipleSelect.Items[ed8a997c-e8be-4c87-88ae-9a673aef5915].Checked"
+                                                            value="true"><input
+                                                            name="MultipleSelect.Items[ed8a997c-e8be-4c87-88ae-9a673aef5915].Checked"
+                                                            type="hidden" value="false">
+                                                        <span class="custom-control-label"><span
+                                                                class="nowrap">Comentários</span></span>
+                                                    </label>
+
+                                                    <input type="hidden" name="MultipleSelect.Items.index"
+                                                        autocomplete="off" value="3cd1c3f5-5786-44fa-b072-548d7e0d43d9">
+                                                    <input type="hidden"
+                                                        id="MultipleSelect_Items_3cd1c3f5-5786-44fa-b072-548d7e0d43d9__Value"
+                                                        name="MultipleSelect.Items[3cd1c3f5-5786-44fa-b072-548d7e0d43d9].Value"
+                                                        value="12">
+                                                    <label class="custom-control custom-checkbox p-0"
+                                                        for="MultipleSelect_Items_3cd1c3f5-5786-44fa-b072-548d7e0d43d9__Checked">
+                                                        <input type="checkbox"
+                                                            class="custom-control-input js_multiSelectItemCheckBox"
+                                                            data-val="true"
+                                                            data-val-required="The Checked field is required."
+                                                            id="MultipleSelect_Items_3cd1c3f5-5786-44fa-b072-548d7e0d43d9__Checked"
+                                                            name="MultipleSelect.Items[3cd1c3f5-5786-44fa-b072-548d7e0d43d9].Checked"
+                                                            value="true"><input
+                                                            name="MultipleSelect.Items[3cd1c3f5-5786-44fa-b072-548d7e0d43d9].Checked"
+                                                            type="hidden" value="false">
+                                                        <span class="custom-control-label"><span
+                                                                class="nowrap">Aceitação de Política de privacidade e
+                                                                Aviso Legal</span></span>
+                                                    </label>
+
+                                                    <input type="hidden" name="MultipleSelect.Items.index"
+                                                        autocomplete="off" value="daba856e-a81f-4f8f-b82c-2569bc05136e">
+                                                    <input type="hidden"
+                                                        id="MultipleSelect_Items_daba856e-a81f-4f8f-b82c-2569bc05136e__Value"
+                                                        name="MultipleSelect.Items[daba856e-a81f-4f8f-b82c-2569bc05136e].Value"
+                                                        value="11">
+                                                    <label class="custom-control custom-checkbox p-0"
+                                                        for="MultipleSelect_Items_daba856e-a81f-4f8f-b82c-2569bc05136e__Checked">
+                                                        <input type="checkbox"
+                                                            class="custom-control-input js_multiSelectItemCheckBox"
+                                                            data-val="true"
+                                                            data-val-required="The Checked field is required."
+                                                            id="MultipleSelect_Items_daba856e-a81f-4f8f-b82c-2569bc05136e__Checked"
+                                                            name="MultipleSelect.Items[daba856e-a81f-4f8f-b82c-2569bc05136e].Checked"
+                                                            value="true"><input
+                                                            name="MultipleSelect.Items[daba856e-a81f-4f8f-b82c-2569bc05136e].Checked"
+                                                            type="hidden" value="false">
+                                                        <span class="custom-control-label"><span
+                                                                class="nowrap">Requisições</span></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="match-timeline pt-20" id="CandidateTimelineGrid">
+
+                                    <div class="timeline-item-wrapper d-flex position-relative js_DetailInfo"
+                                        data-job="468736" data-date="2023/06/04" data-typeaction="1" style="">
+
+                                        <div class="row no-gutters">
+                                            <div class="col px-30">
+                                                <div class="vertical-line mt-15"></div>
+                                                <div class="ball-icons ball-icons-blue mt-15">
+                                                    <i class="icon icon-user-add-2"></i>
+                                                </div>
+                                                <div class="border-bottom pb-30 pt-15 ml-50 timeline-item">
+                                                    <div class="c-md font-sm lh-100 mb-05 text-uppercase timeline-job">
+                                                        <a
+                                                            href="/Company/Match/Matches/468736?idMatch=151997864&amp;matchesTab=TimeLine"><b>Auxiliar
+                                                                de atendimento</b></a></div>
+                                                    <div class="c-md lh-100 timeline-date">
+                                                        <span class="datetime-day">04 Jun. 23 - </span> <span
+                                                            class="datetime-hour">15:16h</span>
+                                                    </div>
+                                                    <div class="c-drk font-md timeline-text">
+                                                        <span class="text-capitalize-first">
+                                                            O candidato se inscreveu no processo seletivo </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item-wrapper d-flex position-relative js_DetailInfo hide-vertical-line"
+                                        data-job="468736" data-date="2023/06/04" data-typeaction="96" style="">
+
+
+                                        <div class="row no-gutters">
+                                            <div class="col px-30">
+                                                <div class="vertical-line mt-15"></div>
+                                                <div class="ball-icons ball-icons-teal mt-15">
+                                                    <i class="icon icon-pencil-2"></i>
+                                                </div>
+                                                <div class="border-bottom pb-30 pt-15 ml-50 timeline-item">
+                                                    <div class="c-md font-sm lh-100 mb-05 text-uppercase timeline-job">
+                                                        <a
+                                                            href="/Company/Match/Matches/468736?idMatch=151997864&amp;matchesTab=TimeLine"><b>Auxiliar
+                                                                de atendimento</b></a></div>
+                                                    <div class="c-md lh-100 timeline-date">
+                                                        <span class="datetime-day">04 Jun. 23 - </span> <span
+                                                            class="datetime-hour">15:16h</span>
+                                                    </div>
+                                                    <div class="c-drk font-md timeline-text">
+                                                        <span class="text-capitalize-first">
+                                                            O candidato aceitou a <b>Política de Privacidade</b> da
+                                                            empresa. </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="TabNotes" class="tab-pane p-0 ">
+                        <div>
+                        </div>
+                    </div>
+                    <div id="TabMessages" class="tab-pane p-0 hidden">
+                        <div>
+
+                            <div class="bg-white company-vancancy-match">
+                                <div class="pr-30 pt-35 pl-30">
+                                    <div class="row">
+                                        <div class="col text-right">
+                                            <a href="javascript:void(0);" class="js_lnkCreateNewMessage">Enviar nova
+                                                mensagem</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pr-10" id="divDetailMessagesGroup">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="TabEvaluations" class="tab-pane p-0 hidden">
+                        <div>
+
+                            <div id="EvaluationDetail" class="evaluation-tab bg-white pt-35">
+                                <div class="">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="TabResults" class="tab-pane p-0 hidden">
+                        <div>
+
+                            <div class="bg-white px-30 pt-30 pb-10 font-sm match-results d-flex justify-content-end">
+                                <a href="javascript:void(0);" class="mr-30 js_lnkCreateNewTest">Solicitar
+                                    Teste/Questionário </a>
+                                <a href="javascript:void(0);" class="js_lnkRequestVideoInterview"> Solicitar Vídeo
+                                    Entrevista</a>
+                            </div>
+
+
+                            <div class="bg-white px-xl-30 px-15  match-results pt-05">
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div id="TabDocuments" class="tab-pane p-0 hidden">
+                        <div>
+
+                            <div class="bg-white">
+
+
+                                <div class="px-30 pt-35 pb-40">
+                                    <div class="row no-gutters">
+                                        <div class="col text-right">
+                                            <a href="javascript:void(0);" class="js_lnkRequestDocuments">Solicitar
+                                                Documentos</a>
+                                        </div>
+                                    </div>
+                                    <div class="fw-600 font-xl mb-20">
+                                        0
+                                        Documentos </div>
+                                    <div id="divMessageGroup">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto b-b-1 b-l-0 b-r-1 b-t-1 bg-gray-100">
+                <div style="width:450px">
+                    <div>
+                        <div class="pt-30 px-30">
+                            <h2 class="font-2lg fw-600 mb-0">1 Processos associados ao Candidato</h2>
+                        </div>
+                        <div class="listed-group">
+
+
+                            <div class="list-item" data-id="151997864">
+                                <div class="detail-process">
+                                    <div class="d-flex">
+                                        <div class="lh-120">
+                                            <h3 class="font-2lg fw-600 lh-100 text-capitalize-first">Auxiliar de
+                                                atendimento</h3>
+                                            <div class="c-md">Vaga Arquivada</div>
+                                            <div>Inscreveu-se no dia 04 junho via Infojobs</div>
+                                            <div>
+                                                <span>Processo Arquivado 04 junho.</span>
+                                                <div>O Candidato ficou na Etapa <span
+                                                        class="fw-600 lh-100 mb-0 text-uppercase">Inscritos</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-history mb-10">
+                                    <div class="detail-history-inner">
+                                        <div class="detail-history-block">
+                                            <span class="stage">
+                                                <span class="status-ball status-ball-gray status-ball-md"></span>
+                                            </span>
+                                            <span class="vertical-line"></span>
+                                            <div class="detail-history-item lh-100">
+                                                <div class="detail-item-name  c-drk fw-600">Inscritos</div>
+                                                <div class="detail-item-date font-sm text-capitalize c-drk">04 jun. 23
+                                                    (Etapa Atual)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
